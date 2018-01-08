@@ -1,0 +1,40 @@
+.call-to-action {
+
+  img { height: 6.4rem }
+
+  .particles:after {
+    content: '';
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 10rem;
+    height: 10rem;
+    background: url('/assets/img/advantages/particles.png');
+    background-size: cover;
+    opacity: .75;
+
+    top: -3rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+
+  .content {  max-width: 360px; margin: 0 auto $pad-vert;  }
+
+  .title strong { display: block; margin-bottom: $pad-vert*2}
+
+  //Call-us
+  .call-us {
+    small { display: block; }
+
+    & > strong { display: block; margin-bottom: $pad-vert/2; }
+  }
+
+  .form {
+    margin-bottom: $pad-vert*2;
+
+    input { text-align: center; }
+
+  }
+}

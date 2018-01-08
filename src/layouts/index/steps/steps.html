@@ -1,0 +1,53 @@
+<% if (data) { %>
+    <section class="page-section steps" id="steps">
+        <div class="ui container">
+
+            <div class="ui stackable grid">
+
+                <div class="six wide column">
+                    <img class="glow light" src="assets/img/steps/skeleton.svg" alt="OZ Experience">
+                </div>
+
+                <div class="ten wide right floated column">
+
+                    <!-- Title -->
+                    <div class="title">
+                        <h2><%- data.title %></h2>
+                        <p><%- data.caption %></p>
+                    </div>
+
+                    <div class="ui three column stackable doubling grid">
+
+                        <!-- Features -->
+                        <% data.features.forEach(function(item, index) {%>
+                            <div class="ui column">
+                                <div class="content">
+                                    <strong class="number glow light">
+                                        <% if (index<9) { %>
+                                            0<%-index+1 %>.
+                                        <% } else { %>
+                                            <%- index+1 %>.
+                                        <% } %>
+                                    </strong>
+                                    <h4><%- item.feature.title %></h4>
+                                    <p> <%- item.feature.caption %></p>
+                                </div>
+                            </div>
+                        <% }); %>
+
+                        <div class="ui column">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+<% } %>

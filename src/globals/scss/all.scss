@@ -1,0 +1,14 @@
+//Common css
+@import './mixins.scss';
+@import './vars.scss';
+@import './reset.scss';
+@import './base.scss';
+@import './typography.scss';
+@import './clickable.scss';
+@import './inputs.scss';
+@import './buttons.scss';
+
+
+//Blocks css
+@import './../../globals/blocks/header/header.scss';
+@import './../../globals/blocks/footer/footer.scss';

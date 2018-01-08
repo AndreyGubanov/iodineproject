@@ -1,0 +1,27 @@
+<% if (data) { %>
+    <section class="page-section features" id="features">
+        <div class="ui container">
+
+            <!-- Features-->
+            <div class="ui three column relaxed stackable grid">
+                <% data.forEach(function(item) {%>
+                    <div class="column">
+                        <img class="glow light" src="/assets/img/icons/<%- item.feature.icon %>" alt="<%- item.feature.title%>"/>
+                        <h3>
+                            <%- item.feature.title %>
+                            <% if (item.feature.price) {%>
+                                <span><%- item.feature.price %></span>
+                            <% } %>
+                        </h3>
+                        <p> <%- item.feature.caption %> </p>
+                    </div>
+                <% }); %>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+<% } %>

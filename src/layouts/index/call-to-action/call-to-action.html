@@ -1,0 +1,35 @@
+<% if (data) { %>
+    <section class="page-section call-to-action">
+        <div class="ui container centered">
+            <div class="content">
+
+                <!-- Title -->
+                <div class="title">
+                    <div class="ui tiny image particles">
+                        <img src="/assets/img/call-to-action/<%- data.image %>"/>
+                    </div>
+                    <h2><%- data.title %></h2>
+                    <strong><%- data.caption %></strong>
+                </div>
+
+                <!-- Order-->
+                <form class="ui form">
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="phone" name="phone-cta" placeholder="Ваш телефон" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="ui button fluid gray" href="<%- data.link%>">Оставить заявку</button>
+                </form>
+            </div>
+
+
+            <!-- Call us -->
+            <div class="call-us">
+                <strong><%- data.call_caption %> <strong class="color-green"><%- data.phone %></strong></strong>
+                <small><%- data.call_subcaption %></small>
+            </div>
+        </div>
+
+    </section>
+<% } %>

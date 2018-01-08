@@ -1,0 +1,22 @@
+<!-- Different steps depending on the stage and registration type -->
+<ul class="registration-steps" id="form-navigation-tabs">
+  <!-- Personal -->
+  <% if (type == 'personal') { %>
+    <!-- Stage 1 -->
+      <li class="current"><span><em>Phone Number</em></span>
+      </li><li><span><em>Login Details</em></span>
+      </li><li><span><em>Personal Details</em></span>
+      </li><li><span><em>Financial Info</em></span>
+      </li><li><span><em>Legal Info</em></span></li>
+  <% } %>
+
+
+  <% if (type == 'business') { %>
+    <!-- Business -->
+      <li class="current"><span><em>Company Info</em></span>
+      </li><li><span><em>Directors</em></span>
+      </li><li><span><em>Shareholders</em></span>
+      </li><li><span><em>Financial Info</em></span>
+      </li><li><span><em>Access Rights</em></span></li>
+  <% } %>
+</ul>
