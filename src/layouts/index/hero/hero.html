@@ -1,0 +1,57 @@
+<% if (data) { %>
+    <section class="page-section hero">
+        <div class="ui container">
+
+            <div class="ui relaxed stackable grid">
+
+                <!-- Title -->
+                <div class="eight wide column">
+                    <h1><%- data.title %></h1>
+                    <p><%- data.caption %></p>
+
+                    <!-- Phone -->
+                    <div class="ui items">
+                        <div class="item">
+                            <div class="ui mini image">
+                                <img class="glow light" src="/assets/img/icons/<%= data.call_us_icon %>" alt="Contact Us">
+                            </div>
+                            <div class="middle aligned content">
+                                <strong><%- data.call_us_caption %> <strong class="color-green"><%- data.phone %></strong></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="right floated middle aligned seven wide column">
+                    <form class="ui form">
+                        <strong><%- data.form_caption%></strong>
+
+                        <div class="two fields">
+                            <div class="field">
+                                <div class="ui input">
+                                    <input type="text" name="name" placeholder="Ваше имя" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui input">
+                                    <input type="phone" name="phone" placeholder="Ваш номер телефона" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="liquid field">
+                            <div class="ui input">
+                                <input type="email" name="email" placeholder="Ваш Email" required>
+                            </div>
+                        </div>
+
+                        <button class="ui fluid button" type="submit"><%- data.form_button%></button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<% } %>

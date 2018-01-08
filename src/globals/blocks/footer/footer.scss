@@ -1,0 +1,29 @@
+footer {
+  color: white;
+
+  //Copyright
+  .copyright {
+    padding: $pad-vert 0;
+    text-align: justify;
+
+    //Flex simulation
+    &:before{ display: block; content: ''; width: 100%; height: 0; }
+    &:after { display: inline-block; content: ''; width: 100%; height: 0; visibility: hidden; overflow: hidden;}
+
+    p {
+      display: inline-block; max-width: 63rem; opacity: .5; margin-bottom: 0; vertical-align: bottom;
+
+      @media screen and (max-width: 768px) { margin-bottom: $pad-vert; text-align: center; }
+    }
+
+    a {
+      img { height:2rem;}
+
+      @media screen and (max-width: 768px) { display: block; text-align: center; }
+    }
+
+    @media screen and (max-width: 768px) {padding-top: $pad-vert*1.5;}
+
+   }
+
+}

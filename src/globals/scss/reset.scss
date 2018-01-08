@@ -1,0 +1,33 @@
+*{margin:0;padding:0}
+html, body{height:100%; line-height:1;}
+table{border-collapse:collapse; border-spacing:0; empty-cells:show;}
+th, tr, td{text-align:left; vertical-align:top}
+address,em{font-style:normal}
+sub, sup{position:relative; font-size:11px;}
+sub{top:5px;}
+sup{top:-5px;}
+a{outline:none;}
+a:hover {text-decoration:none}
+input, button, select{vertical-align:middle; overflow:visible; border: 0; &:active {outline: none} &:focus {outline: none}}
+select{vertical-align:middle;}
+textarea{vertical-align:top;}
+label{ text-align:left;width:100px;}
+fieldset { border: 0; }
+hr, img, object{border:0;}
+hr{color:#ccc; background:#ccc; height:1px; margin:7px 0;}
+li{vertical-align:bottom; list-style:none;}
+
+//Reset default inputs
+input,select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

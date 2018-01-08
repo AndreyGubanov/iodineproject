@@ -1,0 +1,44 @@
+<% if (data) { %>
+    <section class="page-section advantages">
+        <div class="ui container">
+
+            <div class="ui relaxed stackable grid">
+
+                <!-- Title -->
+                <div class="six wide column">
+                    <div class="ui image particles">
+                        <img class="glow light" src="/assets/img/advantages/<%- data.image %>"/>
+                    </div>
+                    <h2><%- data.title %></h2>
+                    <p><%- data.caption %></p>
+                </div>
+
+                <!-- Features -->
+                <div class="ten wide right floated middle aligned column">
+                    <div class="ui two columns very relaxed stackable grid">
+                        <% data.features.forEach(function(item) {%>
+                            <div class="ui column">
+                                <img class="glow" src="/assets/img/icons/<%- item.feature.icon %>" alt="<%- item.feature.title%>"/>
+                                <h3> <%- item.feature.title %> </h3>
+                                <p> <%- item.feature.caption %> </p>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Collaborators -->
+            <div class="ui equal width doubling stackable very relaxed grid">
+                <% data.collaborators.forEach(function(item) {%>
+                <div class="ui centered middle aligned column">
+                    <div class="ui tiny image">
+                        <img src="/assets/img/collaborators/<%- item.collaborator.image %>"/>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+
+        </div>
+    </section>
+<% } %>

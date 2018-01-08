@@ -1,0 +1,41 @@
+<header class="ui fixed menu" id="pageHeader">
+
+
+  <!-- Logo -->
+  <div class="fitted item logo">
+    <img src="/assets/img/logo.svg" class="glow" alt="<%- site.title %>"/>
+    <div>
+      <h4><%- site.title %></h4>
+      <small class="uppercase">From <%- site.title %></small>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="item navigation">
+    <nav class="ui horizontal list">
+      <a href="#features" class="link item uppercase">Menu1</a>
+      <a href="#steps" class="link item uppercase">Menu2</a>
+      <a href="#price" class="link item uppercase">Menu3</a>
+      <a href="#examples" class="link item uppercase">Menu4</a>
+    </nav>
+  </div>
+
+  <div class="item right floated phone-number">
+    <strong class="uppercase">Звонок бесплатный по России</strong>
+    <div class="ui label">
+      <strong class="glow"><%- site.phone %></strong><i class="phone medium icon"></i>
+    </div>
+  </div>
+
+  <div class="fitted item">
+    <button class="ui inverted basic button" id="toggleMobileHeader" type="button">
+      <i class="icon big sidebar"></i>
+    </button>
+  </div>
+
+
+</header>
+
+<div id="mobileHeader" class="ui modal">
+
+</div>

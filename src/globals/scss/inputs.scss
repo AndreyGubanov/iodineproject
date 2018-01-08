@@ -1,0 +1,14 @@
+.ui.form {
+
+  .ui.input {
+
+    & > input {
+      font-family: "AvenirNextW1G";
+      font-size: 1.4rem;
+      background: black;
+      color: white;
+      border-radius: 0;
+      border: 0.1rem solid $color-dark;
+    }
+  }
+}
