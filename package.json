@@ -73,7 +73,6 @@
     "glidejs": "^2.1.0",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "parsleyjs": "^2.7.2",
     "semantic-ui-range": "^1.0.1",
     "semantic-ui-sass": "^2.2.11"
   }
