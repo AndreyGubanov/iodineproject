@@ -26,13 +26,7 @@ Starter-kit for building MPA or static site with Metalsmith and Webpack:
 | `npm run dev:webpack`      | Webpack: Developmnet build with dev-tools        |
 | `npm run build:webpack`    | Webpack: Production build                        |
 
-### Tests `*coming soon`
 
-| Command:                          | Description:                               |
-|:--------------------------------- |:-------------------------------------------|
-| `npm test`                        | Start e2e-tests with nightwatch (**soon**) |
-| `npm run install:selenium-server` | Download Selenium-server (jre needed)      |
-| `npm install:chrome-driver`       | Download chrome-driver (into ".bin")       |
 
 ## Project structure
 ```
@@ -65,6 +59,6 @@ Starter-kit for building MPA or static site with Metalsmith and Webpack:
 │       └── account.md
 ├── README.md
 ├── package.json                dependencies + some configs
-└── todo.md                      
+└── todo.md                     
 
 ```
