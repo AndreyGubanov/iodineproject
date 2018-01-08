@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
 	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 
-	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="assets/js/solutions.js"></script>
 
 	<% if (__ENV__ == 'production') { %>
 		<link rel="stylesheet" type="text/css" href="assets/css/index.css">
@@ -35,8 +35,36 @@
 			<!-- MAIN -->
 			<main>
 
-				<!--Title screen-->
-				<% include ./index/title-screen/title-screen.html %>
+				<!-- Hero -->
+				<% data = hero %>
+				<%- include('solutions/hero/hero.html', {data: data}) %>
+
+				<!-- Features -->
+				<% data = features %>
+				<%- include('solutions/features/features.html', {data: data}) %>
+
+				<!-- Advantages -->
+				<% data = advantages %>
+				<%- include('solutions/advantages/advantages.html', {data: data}) %>
+
+				<!-- Steps -->
+				<% data = steps %>
+				<%- include('solutions/steps/steps.html', {data: data}) %>
+
+				<!-- Price -->
+				<% data = price %>
+				<%- include('solutions/price/price.html', {data: data}) %>
+
+				<!-- Examples -->
+				<% data = examples %>
+				<%- include('solutions/examples/examples.html', {data: data}) %>
+
+
+
+				<!-- Call to action -->
+				<% data = call_to_action %>
+				<%- include('solutions/call-to-action/call-to-action.html', {data: data}) %>
+
 
 			</main>
 	</div>

@@ -8,12 +8,18 @@ html {
 
 body {
 	width: 100%;
-	min-height: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 
 	background: $color-black;
 
 	//lock for popup
 	&.locked { overflow: hidden;}
+}
+
+.root {
+	flex: 1 0 auto;
 }
 
 main { width: 100%; }

@@ -1,0 +1,28 @@
+.title-screen {
+  position: absolute;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+
+
+  //Content
+  .content {
+    position: absolute;
+
+    width: 100%;
+    top: 50%;
+    transform: translateY(-100%);
+
+    text-align: center;
+
+  }
+
+  //Links
+  .links {
+    .link { margin-right: 1.2rem;
+
+      &:last-of-type { margin-right: 0;}
+
+    }
+  }
+}

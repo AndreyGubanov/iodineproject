@@ -14,8 +14,10 @@ var getWebpackConfig = function (env) {
 		context: Root,
 		// Entry Points
 		entry: {
-			index: [path.resolve(Root, 'layouts/index/index.js')]
-		},
+			index: [path.resolve(Root, 'layouts/index/index.js')],
+            solutions: [path.resolve(Root, 'layouts/solutions/solutions.js')]
+
+        },
 		//  Output Points
 		output: {
 			path: path.resolve("./build/assets"),
