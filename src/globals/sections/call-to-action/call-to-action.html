@@ -1,0 +1,33 @@
+<section class="page-section call-to-action">
+    <div class="ui container centered">
+        <div class="content">
+
+            <!-- Title -->
+            <div class="title">
+                <div class="ui tiny image">
+                    <img src="<%- image %>"/>
+                </div>
+                <h2><%- title %></h2>
+                <strong><%- caption %></strong>
+            </div>
+
+            <!-- Order-->
+            <form class="ui form">
+                <div class="field">
+                    <div class="ui input">
+                        <input type="phone" name="phone-cta" placeholder="<%- input_placeholder %>" required>
+                    </div>
+                </div>
+                <button type="submit" class="ui button fluid gray" href="<%- link%>"><%- button_text %></button>
+            </form>
+        </div>
+
+
+        <!-- Call us -->
+        <div class="call-us">
+            <strong><%- call_caption %> <strong class="color-accent"><%- phone %></strong></strong>
+            <small><%- call_subcaption %></small>
+        </div>
+    </div>
+
+</section>

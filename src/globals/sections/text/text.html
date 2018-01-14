@@ -1,0 +1,19 @@
+<section class="page-section text">
+
+    <div class="ui container">
+
+        <header>
+
+            <% if (locals.header) { %>
+                <h2 class="green"><%- header %></h2>
+            <% } %>
+
+            <% for (var i=0;i<text.length;i++) {%>
+                <p><%- text[i].paragraph %></p>
+            <% } %>
+
+        </header>
+
+    </div>
+
+</section>

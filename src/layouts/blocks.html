@@ -34,9 +34,124 @@
 
     <!-- MAIN -->
     <main>
-        <section class="page-section">
-            <h1>BLOCKS</h1>
+
+        <section class="page-section dividing-header">
+            <h1 class="ui container">Hero sections</h1>
         </section>
+
+        <!-- Hero with icon and button-->
+        <%- include('./../globals/sections/hero/big-hero.html', {
+            image:  big_hero.image,
+            header: big_hero.header,
+            caption: big_hero.caption,
+            button_text: big_hero.button.text,
+            button_url: big_hero.button.url
+        }); %>
+
+        <div class="ui divider"></div>
+
+        <!-- Hero without icon and button-->
+        <%- include('./../globals/sections/hero/big-hero.html', {
+            header: big_hero2.header,
+            caption: big_hero2.caption,
+        }); %>
+
+        <section class="page-section dividing-header">
+            <h1 class="ui container">Text sections</h1>
+        </section>
+
+        <!-- Text section -->
+        <%- include('./../globals/sections/text/text.html', {
+            header: text_section.header,
+            text: text_section.paragraphs
+        }); %>
+
+        <section class="page-section dividing-header">
+            <h1 class="ui container">Galleries</h1>
+        </section>
+
+        <!-- Gallery Section  -->
+        <%- include('./../globals/sections/gallery/gallery.html', {
+            header: gallery_section.header,
+            text: gallery_section.paragraphs,
+            images: gallery_section.images
+        }); %>
+
+        <section class="page-section dividing-header">
+            <h1 class="ui container">Figure layouts</h1>
+        </section>
+
+        <!-- Two columns figures -->
+        <%- include('./../globals/sections/figure-layout/two-columns.html', {
+            header: two_figures.header,
+            caption: two_figures.caption,
+            figures: two_figures.figures
+        }); %>
+
+        <div class="ui divider"></div>
+
+        <!-- Two columns figures vertical -->
+        <%- include('./../globals/sections/figure-layout/two-columns-vert.html', {
+            header: two_figures_vert.header,
+            caption: two_figures_vert.caption,
+            figures: two_figures_vert.figures
+        }); %>
+
+        <div class="ui divider"></div>
+
+        <!-- Three columns figures  -->
+        <%- include('./../globals/sections/figure-layout/three-columns.html', {
+            header: three_figures.header,
+            caption: three_figures.caption,
+            figures: three_figures.figures
+        }); %>
+
+        <div class="ui divider"></div>
+
+        <!-- Three columns figures vertical  -->
+        <%- include('./../globals/sections/figure-layout/three-columns-vert.html', {
+            header: three_figures_vert.header,
+            caption: three_figures_vert.caption,
+            figures: three_figures_vert.figures
+        }); %>
+
+        <div class="ui divider"></div>
+
+        <!-- Four columns figures  -->
+        <%- include('./../globals/sections/figure-layout/four-columns.html', {
+            header: four_figures.header,
+            caption: four_figures.caption,
+            figures: four_figures.figures
+        }); %>
+
+        <div class="ui divider"></div>
+
+        <!-- Four columns figures vertical -->
+        <%- include('./../globals/sections/figure-layout/four-columns-vert.html', {
+            header: four_figures_vert.header,
+            caption: four_figures_vert.caption,
+            figures: four_figures_vert.figures
+        }); %>
+
+        <section class="page-section dividing-header">
+            <h1 class="ui container">Call To action</h1>
+        </section>
+
+        <!-- Four columns figures vertical -->
+        <%- include('./../globals/sections/call-to-action/call-to-action.html', {
+            image: call_to_action.image,
+            title: call_to_action.title,
+            caption: call_to_action.caption,
+            link: call_to_action.link,
+            input_placeholder: call_to_action.input_placeholder,
+            button_text: call_to_action.button_text,
+            call_caption: call_to_action.call_caption,
+            phone: call_to_action.phone,
+            call_subcaption: call_to_action.call_subcaption
+        }); %>
+
+
+
     </main>
 </div>
 

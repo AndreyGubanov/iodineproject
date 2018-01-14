@@ -29,8 +29,8 @@ p.small   { font-size: 1.2rem; }
 //Section behaviour
 .page-section { h1     { margin-bottom: 1.6rem; } }
 .page-section { h2     { margin-bottom: 1.6rem; } }
-.page-section { h1 + p { margin-bottom: 3.2rem; } }
-.page-section { h2 + p { margin-bottom: 3.2rem; } }
+.page-section { h1 + p { margin-bottom: $pad-vert; } }
+.page-section { h2 + p { margin-bottom: $pad-vert; } }
 
 
 // Fonts

@@ -1,0 +1,37 @@
+.hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  //Overlay
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.33), black 84%, black 100%);
+
+    z-index: 1;
+  }
+
+  .ui.container {
+    margin-top: $pad-vert;
+    margin-bottom: $pad-vert;
+    background: transparent;
+    z-index: 2;
+
+    .content { max-width: $max-width; margin-bottom: 0;}
+
+    .button { margin-top: $pad-vert}
+
+    * {background: transparent;}
+  }
+}

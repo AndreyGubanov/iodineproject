@@ -1,0 +1,21 @@
+.call-to-action {
+
+  img { height: 6.4rem }
+
+  .content {  max-width: 360px; margin: 0 auto $pad-vert;  }
+
+  .title strong { display: block; margin-bottom: $pad-vert*2}
+
+  //Call-us
+  .call-us {
+    small { display: block; }
+
+    & > strong { display: block; margin-bottom: $pad-vert/2; }
+  }
+
+  .form {
+    margin-bottom: $pad-vert*2;
+
+    input { text-align: center; }
+  }
+}

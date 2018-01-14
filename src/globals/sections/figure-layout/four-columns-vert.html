@@ -1,0 +1,30 @@
+<section class="page-section figure-layout four-columns vertical">
+
+    <div class="ui container">
+
+        <header>
+            <h2 class="green"><%- header %></h2>
+            <p><%- caption %></p>
+        </header>
+
+        <div class="ui stackable grid four columns">
+            <% for (var i=0; i<figures.length; i++) { %>
+
+            <div class='column'>
+                <figure>
+                    <% if (figures[i].figure.image) { %>
+                    <img src="<%- figures[i].figure.image%>" alt="<%- figures[i].figure.title %>"/>
+                    <% } %>
+
+                    <figcaption>
+                        <h3><%- figures[i].figure.title %></h3>
+                        <p><%- figures[i].figure.caption %></p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <% } %>
+        </div>
+
+    </div>
+</section>

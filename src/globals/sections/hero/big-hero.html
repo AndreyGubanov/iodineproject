@@ -1,0 +1,26 @@
+<section class="page-section hero big-hero">
+
+    <div class="ui container">
+        <header class="content">
+            <!-- Image -->
+            <% if (locals.image) { %>
+                <img class="ui tiny image" src="<%- image %>"/>
+                <h1><%- header %></h1>
+            <% } else { %>
+                <!-- No image -->
+                <h1 class="big"><%- header %></h1>
+            <% } %>
+
+            <!-- Caption -->
+            <% if (locals.caption) { %>
+                <p><%- caption %></p>
+            <% } %>
+
+            <!-- Button -->
+            <% if (locals.button_text && locals.button_url) { %>
+                <a class="ui button white" href='<%- button_url %>'><%- button_text %></a>
+            <% } %>
+        </header>
+    </div>
+
+</section>

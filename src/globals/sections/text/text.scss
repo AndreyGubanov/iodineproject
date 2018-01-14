@@ -1,0 +1,11 @@
+.page-section.text {
+
+  header {
+    max-width: $max-width;
+  }
+
+  p { margin-bottom: $pad-vert;}
+  p:last-of-type { margin-bottom: 0;}
+
+
+}

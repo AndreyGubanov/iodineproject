@@ -1,0 +1,23 @@
+<section class="page-section gallery">
+
+    <div class="ui container">
+
+        <header>
+            <h2 class="green"><%- header %></h2>
+            <% if (locals.text) {%>
+                <% for (var i=0;i<text.length;i++) {%>
+                    <p><%- text[i].paragraph %></p>
+                <% } %>
+            <% } %>
+        </header>
+
+        <div class="ui three column very relaxed stackable grid">
+            <% for (var i=0;i<images.length;i++) {%>
+            <div class="column">
+                <img src="<%- images[i].image %>"/>
+            </div>
+            <% } %>
+        </div>
+    </div>
+
+</section>

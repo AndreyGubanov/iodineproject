@@ -1,0 +1,32 @@
+.page-section.figure-layout {
+
+  header { max-width: $max-width; margin-bottom: $pad-vert*2}
+
+  figure {
+    margin: 0 !important;
+    display: flex;
+
+    img { display: inline-block; height: 3rem; margin-right: $pad-hor/2; }
+
+    figcaption { display: inline-block; width: 100%; }
+
+  }
+
+  &.vertical {
+    figure {
+      display: block;
+
+      img { display: block; margin-right: 0; margin-bottom: $pad-vert; }
+      figcaption { display: block; }
+    }
+  }
+
+
+  @media screen and (max-width: 767px) {
+    figure {
+      margin-bottom: $pad-vert/4 !important;
+    }
+  }
+
+
+}

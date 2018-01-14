@@ -1,1 +1,8 @@
 @import '~styles/all.scss';
+
+.dividing-header {
+  padding-top: $pad-vert/4;
+  padding-bottom: $pad-vert/4;
+
+  background-color: $color-iodine;
+}
