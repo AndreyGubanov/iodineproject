@@ -147,5 +147,52 @@ call_to_action:
     button_text: 'Button text'
     call_caption: 'Call here'
     phone: '8 (800) 555-35-35'
-    call_subcaption: 'Call subcaption'    
+    call_subcaption: 'Call subcaption'
+offer:
+    image: './../../assets/img/gear.svg'
+    header: 'I am offer block'
+    caption: 'I am offer caption'
+    offers:
+        - offer:
+            image: './../../assets/img/gear.svg'
+            header: 'Header1'
+            price: '30 000'
+            subs:
+                - sub:
+                    left: 'left'
+                    right: 'right'
+                - sub:
+                    left: 'left'
+                    right: 'right'
+            caption: 'Caption1'
+            link: '#'
+            button_text: 'Button Text'
+        - offer:
+            image: './../../assets/img/gear.svg'
+            header: 'Header2'
+            price: '30 000'
+            subs:
+                - sub:
+                    left: 'left'
+                    right: 'right'
+                - sub:
+                    left: 'left'
+                    right: 'right'
+            caption: 'Caption1'
+            link: '#'
+            button_text: 'Button Text'
+        - offer:
+            image: './../../assets/img/gear.svg'
+            header: 'Header3'
+            price: '30 000'
+            subs:
+                - sub:
+                    left: 'left'
+                    right: 'right'
+                - sub:
+                    left: 'left'
+                    right: 'right'
+            caption: 'Caption1'
+            link: '#'
+            button_text: 'Button Text'
 ---

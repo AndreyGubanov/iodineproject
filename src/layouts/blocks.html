@@ -133,6 +133,20 @@
             figures: four_figures_vert.figures
         }); %>
 
+
+        <section class="page-section dividing-header">
+            <h1 class="ui container">Offer</h1>
+        </section>
+
+        <%- include('./../globals/sections/offer/offer.html', {
+            image: offer.image,
+            header: offer.header,
+            caption: offer.caption,
+            offers: offer.offers
+        }); %>
+
+
+
         <section class="page-section dividing-header">
             <h1 class="ui container">Call To action</h1>
         </section>

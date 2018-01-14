@@ -1,0 +1,47 @@
+<section class="page-section offer" id="price">
+    <div class="ui container">
+
+        <!-- Title-->
+        <div class="centered title">
+            <img src="<%- image %>" alt="<%- title %>"/>
+            <h2><%- header %></h2>
+            <p><%- caption %></p>
+        </div>
+
+        <!-- Offers -->
+        <div class="ui three column relaxed stackable grid">
+            <% offers.forEach(function(item) {%>
+
+            <!-- Offer item -->
+            <div class="ui column">
+                <div class="content">
+                    <div class="ui mini image">
+                        <img src="<%- item.offer.image %>"/>
+                    </div>
+                    <h2> <%- item.offer.header %> </h2>
+                    <h2 class="accented"><%- item.offer.price %></h2>
+                    <div class="ui list">
+
+                        <% item.offer.subs.forEach(function(item) { %>
+                            <div class="item">
+                                <div class="left floated content">
+                                    <h4><%- item.sub.left %></h4>
+                                </div>
+                                <div class="right floated content">
+                                    <h4><%- item.sub.right %></h4>
+                                </div>
+                            </div>
+                        <% }); %>
+
+                    </div>
+
+                    <p><%- item.offer.caption %></p>
+                    <a class="ui fluid gray button" href="<%- item.offer.link %>"><%- item.offer.button_text %></a>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+
+    </div>
+
+</section>
