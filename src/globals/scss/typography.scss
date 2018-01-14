@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, strong, span, p, em, .button { font-family: $font-family}
+h1, h2, h3, h4, h5, strong, span, p, em, .button, small { font-family: $font-family}
 
 h1, h2, h3 , h4, h5 { line-height: 1.15; text-transform: uppercase; }
 p,span              { line-height: 1.25; }
@@ -16,13 +16,14 @@ p     { font-size: 1.6rem; font-weight: 400;  opacity: 0.66; }
 i     { font-size: 1.2rem; font-weight: 500; font-style: normal; }
 em    { font-size: 1rem;   font-weight: 600; letter-spacing: 0.08rem; text-transform: uppercase; color: $color-black;}
 
+.ui.header { color: white}
 
-//Paragraph modifications
+//modifications
 p.small   { font-size: 1.2rem; }
 .caption  { font-weight: 600; letter-spacing: 0.1rem; text-transform: uppercase;}
 .centered  { text-align: center}
-.color-green { color: $color-oz-green; }
 .uppercase { text-transform: uppercase; }
+.accented { color: $color-iodine }
 
 
 //Section behaviour

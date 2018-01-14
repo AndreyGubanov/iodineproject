@@ -7,7 +7,7 @@
       <img src="/assets/img/logo.svg" class="glow" alt="<%- site.title %>"/>
       <div>
         <h4><%- site.title %></h4>
-        <small class="uppercase">From <%- site.title %></small>
+        <small class="uppercase">From Iodine inc.</small>
       </div>
     </a>
   </div>
@@ -15,10 +15,10 @@
   <!-- Navigation -->
   <div class="item navigation">
     <nav class="ui horizontal list">
-      <a href="/solutions" class="link item uppercase">Solutions</a>
-      <a href="/typography" class="link item uppercase">Typography</a>
-      <a href="#price" class="link item uppercase">Menu3</a>
-      <a href="#examples" class="link item uppercase">Menu4</a>
+      <% site.navigationMenu.forEach(function(item) {%>
+        <a href="<%- item.link %>" class="link item uppercase"><%- item.name %></a>
+      <% }); %>
+
     </nav>
   </div>
 

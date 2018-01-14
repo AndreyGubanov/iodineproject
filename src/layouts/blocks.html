@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Iodine Project</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= site.description %>">
+    <meta name="keywords" content="<%= site.keywords %>">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
+    <!--External scripts-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/blocks.js"></script>
+
+    <% if (__ENV__ == 'production') { %>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <% } else { %>
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+    <% } %>
+</head>
+
+<body>
+
+<div class="root">
+
+    <!-- HEADER -->
+    <% include ./../globals/blocks/header/header.html %>
+
+    <!-- MAIN -->
+    <main>
+        <section class="page-section">
+            <h1>BLOCKS</h1>
+        </section>
+    </main>
+</div>
+
+<!-- FOOTER -->
+<% include ./../globals/blocks/footer/footer.html %>
+
+</body>
+</html>

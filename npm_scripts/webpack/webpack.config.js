@@ -15,8 +15,9 @@ var getWebpackConfig = function (env) {
 		// Entry Points
 		entry: {
 			index: [path.resolve(Root, 'layouts/index/index.js')],
-            solutions: [path.resolve(Root, 'layouts/solutions/solutions.js')]
-
+            solutions: [path.resolve(Root, 'layouts/solutions/solutions.js')],
+            typography: [path.resolve(Root, 'layouts/typography/typography.js')],
+            blocks: [path.resolve(Root, 'layouts/blocks/blocks.js')]
         },
 		//  Output Points
 		output: {

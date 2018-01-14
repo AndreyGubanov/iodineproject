@@ -13,7 +13,7 @@ footer {
     p {
       display: inline-block; max-width: 63rem; opacity: .5; margin-bottom: 0; vertical-align: bottom;
 
-      @media screen and (max-width: 768px) { margin-bottom: $pad-vert; text-align: center; }
+      @media screen and (max-width: 768px) { width: 100%; margin-bottom: $pad-vert; text-align: center; }
     }
 
     a {

@@ -44,7 +44,7 @@ main { width: 100%; }
 .page-section { &:first-of-type { padding-top: 16rem; } }
 
 .glow {
-	filter: drop-shadow( 0px 0px 2.5px $color-oz-green );
+	filter: drop-shadow( 0px 0px 2.5px $color-iodine );
 
-	&.light { filter: drop-shadow( 0px 0px 1px $color-oz-green ); }
+	&.light { filter: drop-shadow( 0px 0px 1px $color-iodine ); }
 }

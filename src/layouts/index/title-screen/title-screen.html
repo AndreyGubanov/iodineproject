@@ -5,11 +5,10 @@
         <h1>Iodine project</h1>
 
         <div class="links">
-            <a class="link item" href="/solutions">Solutions</a>
-            <a class="link item" href="/solutions">Typography</a>
-            <a class="link item disabled">WIP</a>
-            <a class="link item disabled">WIP</a>
 
+            <% site.navigationMenu.forEach(function(item) {%>
+                <a href="<%- item.link %>" class="link item"><%- item.name %></a>
+            <% }); %>
         </div>
 
     </div>

@@ -2,4 +2,4 @@
 require('../common.js');
 
 //Styles
-require('./index.scss');
+require('./typography.scss');
